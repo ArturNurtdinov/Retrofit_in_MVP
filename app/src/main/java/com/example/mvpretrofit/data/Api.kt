@@ -1,7 +1,6 @@
-package com.example.mvpretrofit.apis
+package com.example.mvpretrofit.data
 
 import retrofit2.Call
-import com.example.mvpretrofit.data.UsersList
 import retrofit2.http.GET
 import retrofit2.http.Query
 

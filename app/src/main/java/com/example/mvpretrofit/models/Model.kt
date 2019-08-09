@@ -1,7 +1,7 @@
 package com.example.mvpretrofit.models
 
 import android.util.Log
-import com.example.mvpretrofit.apis.Api
+import com.example.mvpretrofit.data.Api
 import com.example.mvpretrofit.data.UsersList
 import com.example.mvpretrofit.views.MainActivity
 import com.example.mvpretrofit.views.MainContract

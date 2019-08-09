@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     override fun initUI(data: UsersList) {
         Log.d(MVP_TAG, "Data set im UI")
         data.users?.forEach {
-            text_view.text = "${text_view.text} '\n' " +
+            text_view.text = "${text_view.text} \n " +
                     "${it.login} ${it.id} ${it.score}"
         }
     }
