@@ -2,6 +2,7 @@ package com.example.mvpretrofit.models
 
 import android.util.Log
 import com.example.mvpretrofit.data.Api
+import com.example.mvpretrofit.views.MainActivity
 import com.example.mvpretrofit.views.MainContract
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -22,7 +23,7 @@ class Model(private val onDataLoading: MainContract.OnDataLoading) : MainContrac
         listObservable.subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                Log.d("MY_TAG", "${it.body()?.users}")
+                Log.d(MainActivity.MVP_TAG, "${it.body()?.users}")
                 onDataLoading.onLoaded(it.body()!!)
             }, {
                 it.printStackTrace()
