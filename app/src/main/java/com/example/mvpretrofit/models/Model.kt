@@ -9,7 +9,7 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
-class Model(private val onDataLoading: MainContract.Model.OnDataLoading) : MainContract.Model {
+class Model(private val onDataLoading: MainContract.OnDataLoading) : MainContract.Model {
     private val BASE_URL = "https://api.github.com/search/"
     override fun loadData() {
         val retrofit = Retrofit.Builder()

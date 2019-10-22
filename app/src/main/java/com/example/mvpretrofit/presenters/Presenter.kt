@@ -6,7 +6,7 @@ import com.example.mvpretrofit.models.Model
 import com.example.mvpretrofit.views.MainActivity
 import com.example.mvpretrofit.views.MainContract
 
-class Presenter(private val view: MainContract.View) : MainContract.Presenter, MainContract.Model.OnDataLoading {
+class Presenter(private val view: MainContract.View) : MainContract.Presenter, MainContract.OnDataLoading {
     private val model = Model(this)
 
     override fun requestData() {
