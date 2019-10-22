@@ -4,10 +4,11 @@ import com.example.mvpretrofit.data.UsersList
 
 interface MainContract {
     interface Model {
-        interface onFinishedDataLoading{
-            fun onFinished(data: UsersList)
+        interface OnDataLoading {
+            fun onLoaded(data: UsersList)
             fun onFailure(t: Throwable)
         }
+
         fun loadData()
     }
 
